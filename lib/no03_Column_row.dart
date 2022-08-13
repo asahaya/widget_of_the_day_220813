@@ -13,7 +13,7 @@ class _No03_Column_RowState extends State<No03_Column_Row> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Column(
+        body: Row(
           //Column向きに全体を中央揃え
           mainAxisAlignment: MainAxisAlignment.center,
 
@@ -23,15 +23,17 @@ class _No03_Column_RowState extends State<No03_Column_Row> {
           // mainAxisAlignment: MainAxisAlignment.spaceBetween, //等間隔分け（上下余白なし）
           // mainAxisAlignment: MainAxisAlignment.spaceEvenly, //等間隔分け（上下余白あり）
           //Columnと逆向きの左揃え
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            Container(
-              // width: 100,
-              height: 100,
-              color: Colors.deepPurple[600],
+            Expanded(
+              child: Container(
+                // width: 100,
+                // height: 100,
+                color: Colors.deepPurple[600],
+              ),
             ),
             Container(
-              width: 300,
+              width: 100,
               height: 100,
               color: Colors.deepPurple[400],
             ),
