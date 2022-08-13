@@ -12,7 +12,19 @@ class _No02_ExpandedState extends State<No02_Expanded> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Container(),
+        body: Column(
+          children: [
+            Container(
+              height: 200,
+              color: Colors.deepPurple,
+            ),
+            Expanded(
+              child: Container(
+                color: Colors.pink,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
