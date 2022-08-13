@@ -12,34 +12,38 @@ class _No01_ContainerState extends State<No01_Container> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.grey[300],
         appBar: AppBar(
           title: Text(''),
           backgroundColor: Colors.amber,
         ),
         body: Center(
           child: Container(
-            //位置
-            // alignment: Alignment.center,
-            // alignment: Alignment(-1, -1), //LU
-            // alignment: Alignment(-1, 1), //BU
-            // alignment: Alignment(1, -1), //RU
-            // alignment: Alignment(1, 1), //RB
-            alignment: Alignment(0.5, 0.5), //Center
-
-            //図形内余白
-            padding: EdgeInsets.all(20),
             height: 300,
             width: 300,
             decoration: BoxDecoration(
-              border: Border.all(
-                color: Colors.black,
-                width: 5,
-              ),
               borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text(
-              'Hello',
-              style: TextStyle(fontSize: 30),
+              color: Colors.grey[300],
+              boxShadow: [
+                //下
+                BoxShadow(
+                  //shadowは数字が大きいほど濃くなる
+                  color: Colors.grey.shade500,
+                  //位置
+                  offset: Offset(4.0, 4.0),
+                  //ぼかし
+                  blurRadius: 15.0,
+                  //光彩？
+                  spreadRadius: 1.0,
+                ),
+                //上
+                BoxShadow(
+                  color: Colors.white,
+                  offset: Offset(-4.0, -4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0,
+                ),
+              ],
             ),
           ),
         ),
