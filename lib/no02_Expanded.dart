@@ -14,9 +14,10 @@ class _No02_ExpandedState extends State<No02_Expanded> {
       home: Scaffold(
         body: Column(
           children: [
-            Container(
-              height: 200,
-              color: Colors.deepPurple,
+            Expanded(
+              child: Container(
+                color: Colors.deepPurple,
+              ),
             ),
             Expanded(
               child: Container(
