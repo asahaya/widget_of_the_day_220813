@@ -23,6 +23,7 @@ class _No04_ListView_BuilderState extends State<No04_ListView_Builder> {
           children: [
             Expanded(
               child: ListView(
+                scrollDirection: Axis.horizontal,
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
