@@ -28,7 +28,8 @@ class _No04_ListView_BuilderState extends State<No04_ListView_Builder> {
       home: Scaffold(
         body: Column(
           children: [
-            Expanded(
+            Container(
+              height: 150,
               child: ListView.builder(
                 itemCount: _stories.length,
                 scrollDirection: Axis.horizontal,
