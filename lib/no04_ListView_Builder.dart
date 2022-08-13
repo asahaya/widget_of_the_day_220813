@@ -8,19 +8,22 @@ class No04_ListView_Builder extends StatefulWidget {
 }
 
 class _No04_ListView_BuilderState extends State<No04_ListView_Builder> {
+  final List _posts = [
+    'post 1',
+    'post 2',
+    'post 3',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: ListView(
-          children: [
-            MySquare(),
-            MySquare(),
-            MySquare(),
-            MySquare(),
-          ],
-        ),
+        body: ListView.builder(
+            itemCount: 2,
+            itemBuilder: (context, index) {
+              return MySquare();
+            }),
       ),
     );
   }
