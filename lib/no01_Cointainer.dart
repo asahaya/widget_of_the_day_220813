@@ -18,14 +18,29 @@ class _No01_ContainerState extends State<No01_Container> {
         ),
         body: Center(
           child: Container(
-            height: 200,
-            width: 200,
+            //位置
+            // alignment: Alignment.center,
+            // alignment: Alignment(-1, -1), //LU
+            // alignment: Alignment(-1, 1), //BU
+            // alignment: Alignment(1, -1), //RU
+            // alignment: Alignment(1, 1), //RB
+            alignment: Alignment(0.5, 0.5), //Center
+
+            //図形内余白
+            padding: EdgeInsets.all(20),
+            height: 300,
+            width: 300,
             decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                border: Border.all(
-                  color: Colors.black,
-                  width: 5,
-                )),
+              border: Border.all(
+                color: Colors.black,
+                width: 5,
+              ),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Text(
+              'Hello',
+              style: TextStyle(fontSize: 30),
+            ),
           ),
         ),
       ),
