@@ -1,22 +1,17 @@
 import 'package:flutter/material.dart';
 
-
-class No01_Container extends StatefulWidget {
-  const No01_Container({Key? key}) : super(key: key);
+class No02_Expanded extends StatefulWidget {
+  const No02_Expanded({Key? key}) : super(key: key);
 
   @override
-  State<No01_Container> createState() => _No01_ContainerState();
+  State<No02_Expanded> createState() => _No02_ExpandedState();
 }
 
-class _No01_ContainerState extends State<No01_Container> {
+class _No02_ExpandedState extends State<No02_Expanded> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text(''),
-          backgroundColor: Colors.amber,
-        ),
         body: Container(),
       ),
     );
