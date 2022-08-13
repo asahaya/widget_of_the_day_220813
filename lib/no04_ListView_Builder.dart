@@ -20,7 +20,8 @@ class _No04_ListView_BuilderState extends State<No04_ListView_Builder> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: ListView.builder(
-            itemCount: 2,
+            //個数
+            itemCount: _posts.length,
             itemBuilder: (context, index) {
               return MySquare();
             }),
