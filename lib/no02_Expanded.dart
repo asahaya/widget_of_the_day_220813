@@ -15,6 +15,7 @@ class _No02_ExpandedState extends State<No02_Expanded> {
         body: Column(
           children: [
             Expanded(
+              flex: 2,
               child: Container(
                 color: Colors.deepPurple,
               ),
@@ -22,6 +23,11 @@ class _No02_ExpandedState extends State<No02_Expanded> {
             Expanded(
               child: Container(
                 color: Colors.pink,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                color: Colors.blue,
               ),
             ),
           ],
