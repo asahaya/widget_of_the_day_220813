@@ -20,7 +20,10 @@ class _No01_ContainerState extends State<No01_Container> {
           child: Container(
             height: 200,
             width: 200,
-            color: Colors.purple,
+            //decorationを使う際はColorを中に
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+            ),
           ),
         ),
       ),
