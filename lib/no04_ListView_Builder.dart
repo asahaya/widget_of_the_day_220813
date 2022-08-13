@@ -19,14 +19,21 @@ class _No04_ListView_BuilderState extends State<No04_ListView_Builder> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: ListView.builder(
-            //個数
-            itemCount: _posts.length,
-            itemBuilder: (context, index) {
-              return MySquare(
-                childText: _posts[index],
-              );
-            }),
+        body: Column(
+          children: [
+            Container(
+              height: 300,
+              child: ListView.builder(
+                  //個数
+                  itemCount: _posts.length,
+                  itemBuilder: (context, index) {
+                    return MySquare(
+                      childText: _posts[index],
+                    );
+                  }),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -46,6 +53,7 @@ class MySquare extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
+        alignment: Alignment.center,
         height: 200,
         color: Colors.deepOrange[200],
         child: Center(
