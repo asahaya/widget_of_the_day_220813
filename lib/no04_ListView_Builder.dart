@@ -13,7 +13,7 @@ class _No04_ListView_BuilderState extends State<No04_ListView_Builder> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Column(
+        body: ListView(
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
