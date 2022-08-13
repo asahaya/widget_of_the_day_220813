@@ -14,6 +14,13 @@ class _No04_ListView_BuilderState extends State<No04_ListView_Builder> {
     'post 3',
   ];
 
+  final List _stories = [
+    'story 1',
+    'story 2',
+    'story 3',
+    'story 4',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,54 +29,14 @@ class _No04_ListView_BuilderState extends State<No04_ListView_Builder> {
         body: Column(
           children: [
             Expanded(
-              child: ListView(
+              child: ListView.builder(
+                itemCount: _stories.length,
                 scrollDirection: Axis.horizontal,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      height: 100,
-                      width: 100,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Colors.pink,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      height: 100,
-                      width: 100,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Colors.pink,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      height: 100,
-                      width: 100,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Colors.pink,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      height: 100,
-                      width: 100,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Colors.pink,
-                      ),
-                    ),
-                  ),
-                ],
+                itemBuilder: (context, index) {
+                  return MyCircle(
+                    textChild: _stories[index],
+                  );
+                },
               ),
             ),
             Expanded(
@@ -110,6 +77,32 @@ class MySquare extends StatelessWidget {
           child: Text(
             childText,
             style: TextStyle(fontSize: 40),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class MyCircle extends StatelessWidget {
+  final String textChild;
+  MyCircle({Key? key, required this.textChild}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Container(
+        height: 100,
+        width: 100,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          color: Colors.pink[200],
+        ),
+        child: Center(
+          child: Text(
+            textChild,
+            style: TextStyle(fontSize: 20, color: Colors.black),
           ),
         ),
       ),
