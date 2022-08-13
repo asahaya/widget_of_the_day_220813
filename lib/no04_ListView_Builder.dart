@@ -23,7 +23,9 @@ class _No04_ListView_BuilderState extends State<No04_ListView_Builder> {
             //個数
             itemCount: _posts.length,
             itemBuilder: (context, index) {
-              return MySquare();
+              return MySquare(
+                childText: _posts[index],
+              );
             }),
       ),
     );
@@ -32,7 +34,12 @@ class _No04_ListView_BuilderState extends State<No04_ListView_Builder> {
 
 //コードをきれいにするために分離しましょう
 class MySquare extends StatelessWidget {
-  const MySquare({Key? key}) : super(key: key);
+  final String childText;
+
+  MySquare({
+    Key? key,
+    required this.childText,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -41,6 +48,12 @@ class MySquare extends StatelessWidget {
       child: Container(
         height: 200,
         color: Colors.deepOrange[200],
+        child: Center(
+          child: Text(
+            childText,
+            style: TextStyle(fontSize: 40),
+          ),
+        ),
       ),
     );
   }
