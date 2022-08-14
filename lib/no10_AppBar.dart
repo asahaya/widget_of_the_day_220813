@@ -12,11 +12,15 @@ class _No10_AppBarState extends State<No10_AppBar> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      //primarySwatch=ThemeData内の色プロパティ全体を以下の色に優先させる
+      // theme: ThemeData(
+      //   primarySwatch: Colors.green),
       home: Scaffold(
         appBar: AppBar(
           title: Text(''),
           //背景
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.transparent,
+          elevation: 9,
         ),
       ),
     );
