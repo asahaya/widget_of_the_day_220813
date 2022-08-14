@@ -7,7 +7,8 @@ import 'package:widget_of_the_day_220813/no06_ImageAsset.dart';
 import 'package:widget_of_the_day_220813/no07_GridView_Builder.dart';
 
 import 'no01_Cointainer.dart';
+import 'no08_GestureDetector.dart';
 
 void main() {
-  runApp(const No07_GridView_Builder());
+  runApp(const No08_GestureDetector());
 }
