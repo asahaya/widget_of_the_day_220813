@@ -11,6 +11,8 @@ class _No13_TabBarState extends State<No13_TabBar> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(primarySwatch: Colors.deepPurple),
+      debugShowCheckedModeBanner: false,
       home: Separate(),
     );
   }
@@ -35,7 +37,7 @@ class _SeparateState extends State<Separate> {
             style: TextStyle(letterSpacing: 12.0),
           ),
           centerTitle: true,
-          backgroundColor: Colors.deepPurple[300],
+          // backgroundColor: Colors.deepPurple[300],
         ),
         body: Column(children: [
           TabBar(
@@ -48,17 +50,27 @@ class _SeparateState extends State<Separate> {
               ),
               Tab(
                 icon: Icon(
-                  Icons.home,
+                  Icons.search,
                   color: Colors.deepPurple,
                 ),
               ),
               Tab(
                 icon: Icon(
-                  Icons.home,
+                  Icons.settings,
                   color: Colors.deepPurple,
                 ),
               ),
             ],
+          ),
+          //Expandedでくるまないとエラー
+          Expanded(
+            child: TabBarView(
+              children: [
+                One_Page(),
+                Two_Page(),
+                Three_Page(),
+              ],
+            ),
           )
         ]),
       ),
@@ -66,40 +78,38 @@ class _SeparateState extends State<Separate> {
   }
 }
 
-class FirstPage extends StatelessWidget {
-  const FirstPage({Key? key}) : super(key: key);
+class One_Page extends StatelessWidget {
+  const One_Page({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.lightBlue[200],
-      body: Center(
-        child: Text(
-          'First Page',
-          style: TextStyle(fontSize: 20, letterSpacing: 3.0),
-        ),
-      ),
+    return Container(
+      color: Colors.amber,
+      child: Center(child: Text('1ST TAB')),
     );
   }
 }
 
-class SecondPage extends StatelessWidget {
-  const SecondPage({Key? key}) : super(key: key);
+class Two_Page extends StatelessWidget {
+  const Two_Page({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.red[200],
-      body: Center(
-        child: Text(
-          'Second Page',
-          style: TextStyle(fontSize: 20, letterSpacing: 3.0),
-        ),
-      ),
+    return Container(
+      color: Colors.teal,
+      child: Center(child: Text('2ST TAB')),
     );
   }
 }
 
-//MaterialAppとScaffodを同じclassないに書くと
-//FlutterError (Navigator operation requested with a context that does not include a Navigator. The context used to push or pop routes from the Navigator must be that of a widget that is a descendant of a Navigator widget.)
-//になるので分離させる
+class Three_Page extends StatelessWidget {
+  const Three_Page({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.pink,
+      child: Center(child: Text('3ST TAB')),
+    );
+  }
+}
