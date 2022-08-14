@@ -35,7 +35,7 @@ class _No08_GestureDetectorState extends State<No08_GestureDetector> {
                 style: TextStyle(fontSize: 30),
               ),
               GestureDetector(
-                onTap: _touch(),
+                onTap: _touch,
                 child: Container(
                   padding: EdgeInsets.all(15),
                   color: Colors.deepPurple[200],
