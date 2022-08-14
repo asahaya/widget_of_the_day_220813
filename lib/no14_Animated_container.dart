@@ -1,23 +1,38 @@
 import 'package:flutter/material.dart';
 
-
-class No01_Container extends StatefulWidget {
-  const No01_Container({Key? key}) : super(key: key);
+class No14_AnimatedContainer extends StatefulWidget {
+  const No14_AnimatedContainer({Key? key}) : super(key: key);
 
   @override
-  State<No01_Container> createState() => _No01_ContainerState();
+  State<No14_AnimatedContainer> createState() => _No14_AnimatedContainerState();
 }
 
-class _No01_ContainerState extends State<No01_Container> {
+class _No14_AnimatedContainerState extends State<No14_AnimatedContainer> {
+  //初期値
+  double boxHeight = 100;
+  double boxWidth = 100;
+
+  void _expandedBox() {
+    setState(() {
+      boxHeight = 300;
+      boxWidth = 300;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(''),
-          backgroundColor: Colors.amber,
+      home: GestureDetector(
+        onTap: _expandedBox,
+        child: Scaffold(
+          backgroundColor: Colors.deepPurple[200],
+          body: Center(
+              child: Container(
+            height: boxHeight,
+            width: boxWidth,
+            color: Colors.deepPurple,
+          )),
         ),
-        body: Container(),
       ),
     );
   }
