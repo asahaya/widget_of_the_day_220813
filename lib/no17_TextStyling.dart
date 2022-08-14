@@ -35,6 +35,13 @@ class no17_TextStying extends StatelessWidget {
 // Cardのchild
 // AboutDialogやライセンスページのバージョン名
 
+//分離
+final pinkFont = TextStyle(
+  fontSize: 30,
+  color: Colors.pink,
+  fontStyle: FontStyle.normal,
+);
+
 class Separate extends StatelessWidget {
   const Separate({Key? key}) : super(key: key);
 
@@ -51,7 +58,7 @@ class Separate extends StatelessWidget {
             //共通テーマは引き継ぎ、指定部分を塗り替える
             Text(
               'Text Widget Tutorial',
-              style: TextStyle(fontSize: 20, color: Colors.pink),
+              style: pinkFont,
             ),
           ],
         ),
