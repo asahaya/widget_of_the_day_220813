@@ -11,6 +11,12 @@ class No08_GestureDetector extends StatefulWidget {
 class _No08_GestureDetectorState extends State<No08_GestureDetector> {
   int tappedCount = 0;
 
+  void _touch() {
+    setState(() {
+      tappedCount++;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -29,12 +35,7 @@ class _No08_GestureDetectorState extends State<No08_GestureDetector> {
                 style: TextStyle(fontSize: 30),
               ),
               GestureDetector(
-                onTap: () {
-                  setState(() {
-                    tappedCount++;
-                    // tappedCount + 1; //++を同意
-                  });
-                },
+                onTap: _touch(),
                 child: Container(
                   padding: EdgeInsets.all(15),
                   color: Colors.deepPurple[200],
