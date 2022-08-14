@@ -18,6 +18,7 @@ class _No09_BNBState extends State<No09_BNB> {
     });
   }
 
+//理想は各ページでファイルを作成する
   final List<Widget> _pages = [
     Center(
       child: Text(
@@ -53,6 +54,7 @@ class _No09_BNBState extends State<No09_BNB> {
           title: Text(''),
           backgroundColor: Colors.amber,
         ),
+        //BNBの選択によってbodyを入れ替える
         body: _pages[_selectedIndex],
         bottomNavigationBar: BottomNavigationBar(
             //すべて表示させるため

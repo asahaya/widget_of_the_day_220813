@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 
-
-class No01_Container extends StatefulWidget {
-  const No01_Container({Key? key}) : super(key: key);
+class No10_AppBar extends StatefulWidget {
+  const No10_AppBar({Key? key}) : super(key: key);
 
   @override
-  State<No01_Container> createState() => _No01_ContainerState();
+  State<No10_AppBar> createState() => _No10_AppBarState();
 }
 
-class _No01_ContainerState extends State<No01_Container> {
+class _No10_AppBarState extends State<No10_AppBar> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text(''),
-          backgroundColor: Colors.amber,
+          //背景
+          backgroundColor: Colors.green,
         ),
-        body: Container(),
       ),
     );
   }
