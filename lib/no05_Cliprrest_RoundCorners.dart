@@ -14,6 +14,7 @@ class _No05_RoundCornersState extends State<No05_RoundCorners> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
+          //丸くしたいだけの場合はClipRRectが良い
           child: ClipRRect(
             borderRadius: BorderRadius.circular(50),
             child: Container(
