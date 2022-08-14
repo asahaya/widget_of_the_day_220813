@@ -33,14 +33,23 @@ class _SeparateState extends State<Separate> {
           centerTitle: true,
           backgroundColor: Colors.deepPurple[300],
           leading: Icon(Icons.menu),
-          title: Text(
-            'SLIVERAPPBER',
-            style: TextStyle(letterSpacing: 10.0),
-          ),
+          // title: Text(
+          //   'SLIVERAPPBER',
+          //   style: TextStyle(letterSpacing: 10.0),
+          // ),
           expandedHeight: 250,
+          //Barの移動
+          floating: true,
+          //barが消えない
+          pinned: true,
+          //スライドによる色の変更
           flexibleSpace: FlexibleSpaceBar(
             background: Container(
               color: Colors.pink,
+            ),
+            title: Text(
+              'SLIVERAPPBER',
+              style: TextStyle(letterSpacing: 3.0),
             ),
           ),
         ),
