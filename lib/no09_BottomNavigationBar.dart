@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
-
-class No01_Container extends StatefulWidget {
-  const No01_Container({Key? key}) : super(key: key);
+class No09_BNB extends StatefulWidget {
+  const No09_BNB({Key? key}) : super(key: key);
 
   @override
-  State<No01_Container> createState() => _No01_ContainerState();
+  State<No09_BNB> createState() => _No09_BNBState();
 }
 
-class _No01_ContainerState extends State<No01_Container> {
+class _No09_BNBState extends State<No09_BNB> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,7 +16,27 @@ class _No01_ContainerState extends State<No01_Container> {
           title: Text(''),
           backgroundColor: Colors.amber,
         ),
-        body: Container(),
+        body: Center(
+          child: Text(
+            'Hello',
+            style: TextStyle(fontSize: 50),
+          ),
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+            //すべて表示させるため
+            type: BottomNavigationBarType.fixed,
+            items: [
+              //2つ以上並べないとエラー
+              //labelをnullにするとエラー
+
+              BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.message), label: 'message'),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.person), label: 'person'),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.settings), label: 'setting'),
+            ]),
       ),
     );
   }
