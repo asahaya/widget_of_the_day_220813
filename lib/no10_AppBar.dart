@@ -17,10 +17,29 @@ class _No10_AppBarState extends State<No10_AppBar> {
       //   primarySwatch: Colors.green),
       home: Scaffold(
         appBar: AppBar(
-          title: Text(''),
           //背景
-          backgroundColor: Colors.transparent,
-          elevation: 9,
+          backgroundColor: Colors.deepPurple[300],
+          //影
+          elevation: 0,
+//title
+          title: Text('A p p b a r'),
+          //text中央揃え
+          centerTitle: true,
+          //左配置
+          leading: IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.menu),
+          ),
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.share),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.person),
+            ),
+          ],
         ),
       ),
     );
