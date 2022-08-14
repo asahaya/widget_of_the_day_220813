@@ -38,6 +38,11 @@ class _SeparateState extends State<Separate> {
             style: TextStyle(letterSpacing: 10.0),
           ),
           expandedHeight: 250,
+          flexibleSpace: FlexibleSpaceBar(
+            background: Container(
+              color: Colors.pink,
+            ),
+          ),
         ),
         SliverToBoxAdapter(
           child: Padding(
