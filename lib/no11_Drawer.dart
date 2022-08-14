@@ -76,6 +76,7 @@ class _SeparateState extends State<Separate> {
           ),
         ),
       ),
+      //右側に配置するDrawer
       endDrawer: Drawer(),
     );
   }
