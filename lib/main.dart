@@ -13,11 +13,12 @@ import 'package:widget_of_the_day_220813/no13_TabBar.dart';
 import 'package:widget_of_the_day_220813/no14_Animated_container.dart';
 import 'package:widget_of_the_day_220813/no16_AlertDialog.dart';
 import 'package:widget_of_the_day_220813/no17_TextStyling.dart';
+import 'package:widget_of_the_day_220813/no18_RichText.dart';
 
 import 'no01_Cointainer.dart';
 import 'no08_GestureDetector.dart';
 import 'no15_MadiaQuery.dart';
 
 void main() {
-  runApp(const no17_TextStying());
+  runApp(const no18_RichText());
 }

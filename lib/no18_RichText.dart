@@ -1,23 +1,30 @@
 import 'package:flutter/material.dart';
 
+class no18_RichText extends StatelessWidget {
+  const no18_RichText({Key? key}) : super(key: key);
 
-class No01_Container extends StatefulWidget {
-  const No01_Container({Key? key}) : super(key: key);
-
-  @override
-  State<No01_Container> createState() => _No01_ContainerState();
-}
-
-class _No01_ContainerState extends State<No01_Container> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text(''),
-          backgroundColor: Colors.amber,
+        body: Column(
+          children: [
+            Container(
+              height: 350,
+              color: Colors.grey[350],
+            ),
+            RichText(
+                text: TextSpan(
+                    style: TextStyle(fontSize: 20, color: Colors.black),
+                    children: [
+                  TextSpan(
+                      text: 'AAA',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, letterSpacing: 4)),
+                  TextSpan(text: 'ZZZ', style: TextStyle(color: Colors.green)),
+                ]))
+          ],
         ),
-        body: Container(),
       ),
     );
   }
