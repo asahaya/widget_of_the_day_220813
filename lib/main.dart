@@ -14,7 +14,8 @@ import 'package:widget_of_the_day_220813/no14_Animated_container.dart';
 
 import 'no01_Cointainer.dart';
 import 'no08_GestureDetector.dart';
+import 'no15_MadiaQuery.dart';
 
 void main() {
-  runApp(const No14_AnimatedContainer());
+  runApp(const No15_MediaQuery());
 }
