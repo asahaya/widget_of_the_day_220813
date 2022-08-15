@@ -43,7 +43,10 @@ class No20_Separate extends StatelessWidget {
     return Scaffold(
       body: PageView(
         controller: _controller,
-        scrollDirection: Axis.vertical,
+        //スクロール向き
+        //vertical＝上下
+        //horizontal=左右
+        scrollDirection: Axis.horizontal,
         children: [
           MyPOST1(),
           MyPOST2(),

@@ -16,11 +16,12 @@ import 'package:widget_of_the_day_220813/no17_TextStyling.dart';
 import 'package:widget_of_the_day_220813/no18_RichText.dart';
 import 'package:widget_of_the_day_220813/no19_Timer.dart';
 import 'package:widget_of_the_day_220813/no20_PageView.dart';
+import 'package:widget_of_the_day_220813/no21_Stack.dart';
 
 import 'no01_Cointainer.dart';
 import 'no08_GestureDetector.dart';
 import 'no15_MadiaQuery.dart';
 
 void main() {
-  runApp(const No20_PageView());
+  runApp(const No21_StackWidget());
 }
