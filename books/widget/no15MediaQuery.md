@@ -49,4 +49,4 @@ class Separeta extends StatelessWidget {
 }
 ```
 
-![](/images/c15-m01.gif =250x)
+![](/images/c15-m3.gif =650x)
