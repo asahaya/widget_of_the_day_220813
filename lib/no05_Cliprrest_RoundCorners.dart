@@ -1,23 +1,29 @@
 import 'package:flutter/material.dart';
 
-
-class No01_Container extends StatefulWidget {
-  const No01_Container({Key? key}) : super(key: key);
+class No05_RoundCorners extends StatefulWidget {
+  const No05_RoundCorners({Key? key}) : super(key: key);
 
   @override
-  State<No01_Container> createState() => _No01_ContainerState();
+  State<No05_RoundCorners> createState() => _No05_RoundCornersState();
 }
 
-class _No01_ContainerState extends State<No01_Container> {
+class _No05_RoundCornersState extends State<No05_RoundCorners> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text(''),
-          backgroundColor: Colors.amber,
+        body: Center(
+          //丸くしたいだけの場合はClipRRectが良い
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(50),
+            child: Container(
+              height: 300,
+              width: 300,
+              color: Colors.deepPurple,
+            ),
+          ),
         ),
-        body: Container(),
       ),
     );
   }
