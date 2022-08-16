@@ -6,6 +6,9 @@ topics: []
 published: true
 ---
 
+![](/images/c14-m01.gif =250x)
+
+
 ```diff dart:animationContainer.dart
 
 class _No14_AnimatedContainerState extends State<No14_AnimatedContainer> {
@@ -39,6 +42,8 @@ class _No14_AnimatedContainerState extends State<No14_AnimatedContainer> {
   }
 
 ```
+
+![](/images/c14-m02.gif =250x)
 
 
 ```diff dart:animationContainer.dart
@@ -75,7 +80,7 @@ class _No14_AnimatedContainerState extends State<No14_AnimatedContainer> {
         ),
       ),
 ```
-
+![](/images/c14-m03.gif =250x)
 
 ```diff dart:animationContainer.dart
  double boxHeight = 100;

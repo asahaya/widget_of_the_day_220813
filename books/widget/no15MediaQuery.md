@@ -5,7 +5,7 @@ type: "tech" # tech: 技術記事 / idea: アイデア
 topics: []
 published: true
 ---
-
+![](/images/c15-1.png =250x)
 ```diff dart:mediaquery.dart
 class Separeta extends StatelessWidget {
   const Separeta({Key? key}) : super(key: key);
@@ -48,12 +48,5 @@ class Separeta extends StatelessWidget {
   }
 }
 ```
-```diff dart:GestureDetector.dart
 
-```
-```diff dart:GestureDetector.dart
-
-```
-```diff dart:GestureDetector.dart
-
-```
+![](/images/c15-m01.gif =250x)

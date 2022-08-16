@@ -6,6 +6,9 @@ topics: []
 published: true
 ---
 
+![](/images/c13-m01.gif =250x)
+
+s
 ```diff dart:tapBer.dart
 class _No13_TabBarState extends State<No13_TabBar> {
   @override
@@ -102,6 +105,10 @@ class SecondPage extends StatelessWidget {
 
 ```
 no13_tabber_background
+
+
+![](/images/c13-m02.gif =250x)
+
 ```diff dart:tapBer.dart
   @override
   Widget build(BuildContext context) {
@@ -112,8 +119,8 @@ no13_tabber_background
     );
   }
 }
-
- --------------------------------
+///////////////////////////
+ 
 class _SeparateState extends State<Separate> {
   @override
   Widget build(BuildContext context) {
@@ -221,12 +228,3 @@ class SecondPage extends StatelessWidget {
 + }
 
 ```
-```diff dart:tapBer.dart
-
-
-```
-```diff dart:tapBer.dart
-
-
-```
-

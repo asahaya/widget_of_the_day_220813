@@ -6,6 +6,7 @@ topics: []
 published: true
 ---
 
+![](/images/c10-1.png =250x)
 
 
 ```diff dart:AppBer.dart
@@ -26,6 +27,9 @@ class _No10_AppBarState extends State<No10_AppBar> {
 
 ```
 transparent
+
+![](/images/c10-2.png =250x)
+
 
 ```diff dart:AppBer.dart
   Widget build(BuildContext context) {
@@ -48,6 +52,9 @@ transparent
 ```
 
 appber_parts
+
+![](/images/c10-3.png =250x)
+
 
 ```diff dart:AppBer.dart
 

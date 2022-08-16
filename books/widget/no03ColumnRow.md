@@ -5,6 +5,7 @@ type: "tech" # tech: 技術記事 / idea: アイデア
 topics: []
 published: true
 ---
+![](/images/c03-1.png =250x)
 
 ```diff dart:ColumnRow.dart
 class _No03_Column_RowState extends State<No03_Column_Row> {
@@ -45,6 +46,8 @@ class _No03_Column_RowState extends State<No03_Column_Row> {
   }
 
 ```
+![](/images/c03-2.png =250x)
+
 
 ```diff dart:ColumnRow.dart
  home: Scaffold(
@@ -77,7 +80,7 @@ class _No03_Column_RowState extends State<No03_Column_Row> {
             ),
 
 ```
-
+![](/images/c03-3.png =250x)
 ```diff dart:ColumnRow.dart
    return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -113,28 +116,3 @@ class _No03_Column_RowState extends State<No03_Column_Row> {
   }
 }
 ``````
-``````diff dart:ColumnRow.dart
-+ sss
-- xxx
-
-```
-```diff dart:Expanded.dart
-+ sss
-- xxx
-
-```
-```diff dart:Expanded.dart
-+ sss
-- xxx
-
-```
-```diff dart:Expanded.dart
-+ sss
-- xxx
-
-```
-```diff dart:Expanded.dart
-+ sss
-- xxx
-
-```

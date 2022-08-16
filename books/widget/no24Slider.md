@@ -5,6 +5,7 @@ type: "tech" # tech: 技術記事 / idea: アイデア
 topics: []
 published: true
 ---
+![](/images/c24-m1.gif =250x)
 
 ```diff dart:slider.dart
 class No24_Slider extends StatelessWidget {

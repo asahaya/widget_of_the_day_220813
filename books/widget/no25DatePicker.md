@@ -6,6 +6,8 @@ topics: []
 published: true
 ---
 
+![](/images/c25-m1.gif =250x)
+
 ```diff dart:datepicker.dart
 class No25_DatePicker extends StatelessWidget {
   const No25_DatePicker({Key? key}) : super(key: key);

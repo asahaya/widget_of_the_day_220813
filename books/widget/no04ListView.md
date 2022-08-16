@@ -6,7 +6,19 @@ topics: []
 published: true
 ---
 
-
+![](/images/c04-1.png =250x)
+![](/images/c04-2.png =250x)
+![](/images/c04-3.png =250x)
+![](/images/c04-4.png =250x)
+![](/images/c04-5.png =250x)
+![](/images/c04-6.png =250x)
+![](/images/c04-m1.gif =250x)
+![](/images/c04-m2.gif =250x)
+![](/images/c04-m3.gif =250x)
+![](/images/c04-m4.gif =250x)
+![](/images/c04-m5.gif =250x)
+![](/images/c04-m6.gif =250x)
+![](/images/c04-m7.gif =250x)
 
 ```diff dart:ListView.dart
 class _No04_ListView_BuilderState extends State<No04_ListView_Builder> {
@@ -61,7 +73,7 @@ class _No04_ListView_BuilderState extends State<No04_ListView_Builder> {
               padding: const EdgeInsets.all(8.0),
 
 ```
-```diff dart:Expanded.dart
+```diff dart:ListView.dart
 
 　       body: ListView(
 +        physics: NeverScrollableScrollPhysics(),
@@ -71,7 +83,7 @@ class _No04_ListView_BuilderState extends State<No04_ListView_Builder> {
 ```
 
 
-```diff dart:Expanded.dart
+```diff dart:ListView.dart
      home: Scaffold(
         body: ListView(
           children: [

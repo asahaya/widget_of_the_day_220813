@@ -6,6 +6,9 @@ topics: []
 published: true
 ---
 
+![](/images/c09-m01.gif =250x)
+
+
 ```diff dart:bnb.dart
 class _No09_BNBState extends State<No09_BNB> {
   @override
@@ -42,6 +45,8 @@ class _No09_BNBState extends State<No09_BNB> {
   }
 
 ```
+![](/images/c09-m02.gif =250x)
+
 //bg
 ```diff dart:bnb.dart
 
@@ -122,28 +127,4 @@ class _No09_BNBState extends State<No09_BNB> {
     );
   }
 }
-```
-```diff dart:GestureDetector.dart
-
-
-```
-```diff dart:GestureDetector.dart
-
-
-```
-```diff dart:GestureDetector.dart
-
-
-```
-```diff dart:GestureDetector.dart
-
-
-```
-```diff dart:GestureDetector.dart
-
-
-```
-```diff dart:GestureDetector.dart
-
-
 ```

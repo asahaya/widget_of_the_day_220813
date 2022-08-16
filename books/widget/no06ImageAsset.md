@@ -6,6 +6,9 @@ topics: []
 published: true
 ---
 
+![](/images/c06-1.png =250x)
+
+
 ```diff yaml:pubspec.yaml
   uses-material-design: true
 
@@ -15,6 +18,9 @@ published: true
 
 ```
 pub get
+
+![](/images/c06-2.png =250x)
+
 
 ```diff dart:ListView.dart
       home: Scaffold(

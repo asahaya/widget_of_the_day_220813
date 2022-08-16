@@ -4,7 +4,9 @@ emoji: "📘"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: []
 published: true
+free: true 
 ---
+![](/images/c02-1.png =250x)
 
 
 ```diff dart:Expanded.dart
@@ -29,6 +31,9 @@ Widget build(BuildContext context) {
   }
 
 ```
+
+![](/images/c02-2.png =250x)
+
 ```diff dart:Expanded.dart
   home: Scaffold(
         body: Column(
@@ -45,6 +50,9 @@ Widget build(BuildContext context) {
               child: Container(
 
 ```
+
+![](/images/c02-3.png =250x)
+
 ```diff dart:Expanded.dart
   home: Scaffold(
         body: Column(

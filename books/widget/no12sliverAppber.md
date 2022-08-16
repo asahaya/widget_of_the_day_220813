@@ -6,6 +6,10 @@ topics: []
 published: true
 ---
 
+
+![](/images/c12-m01.gif =250x)
+
+
 ```diff dart:sliverAppBar.dart
 class _No12_SliverAppBarState extends State<No12_SliverAppBar> {
   @override
@@ -69,6 +73,9 @@ class _SeparateState extends State<Separate> {
 }
 ```
 
+![](/images/c12-m02.gif =250x)
+
+
 ```diff dart:sliverAppBar.dart
   SliverAppBar(
           centerTitle: true,
@@ -89,6 +96,8 @@ class _SeparateState extends State<Separate> {
         ),
 
 ```
+
+![](/images/c12-m03.gif =250x)
 
 ```diff dart:sliverAppBar.dart
       body: CustomScrollView(slivers: [
@@ -121,7 +130,3 @@ class _SeparateState extends State<Separate> {
 
 ```
 
-```diff dart:sliverAppBar.dart
-
-
-```

@@ -5,6 +5,10 @@ type: "tech" # tech: 技術記事 / idea: アイデア
 topics: []
 published: true
 ---
+
+![](/images/c11-m01.gif =250x)
+
+
 ```diff dart:drawer.dart
 class _No11_DrawerState extends State<No11_Drawer> {
   @override
@@ -120,7 +124,7 @@ class SecondPage extends StatelessWidget {
 
 ```
 
-
+![](/images/c11-m02.gif =250x)
 ```diff dart:drawer.dart
 
 +//右側に配置するDrawer

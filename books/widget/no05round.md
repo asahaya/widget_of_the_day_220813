@@ -8,7 +8,7 @@ published: true
 
 
 
-
+![](/images/c05-1.png =250x)
 ```diff dart:No05_RoundCorners.dart
 class _No05_RoundCornersState extends State<No05_RoundCorners> {
   @override

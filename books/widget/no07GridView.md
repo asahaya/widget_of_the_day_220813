@@ -8,6 +8,8 @@ published: true
 
 
 
+![](/images/c07-1.png =250x)
+
 ```diff dart:gridview.dart
 class _No07_GridView_BuilderState extends State<No07_GridView_Builder> {
   @override
@@ -49,7 +51,7 @@ class _No07_GridView_BuilderState extends State<No07_GridView_Builder> {
   }
 ```
 
-
+![](/images/c07-2.png =250x)
 
 //builder
 ```diff dart:xxxx.dart

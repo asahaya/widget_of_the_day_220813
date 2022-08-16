@@ -6,6 +6,10 @@ topics: []
 published: true
 ---
 
+
+![](/images/c08-m1.gif =250x)
+
+
 ```diff dart:GestureDetector.dart
 class _No08_GestureDetectorState extends State<No08_GestureDetector> {
   int tappedCount = 0;
@@ -50,6 +54,9 @@ class _No08_GestureDetectorState extends State<No08_GestureDetector> {
   }
 
 ```
+
+![](/images/c08-m2.gif =250x)
+
 ```diff dart:gesturedetector.dart
 
 +  int tappedCount = 0;
