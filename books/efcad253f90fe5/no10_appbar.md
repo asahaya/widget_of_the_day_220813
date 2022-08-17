@@ -4,6 +4,7 @@ emoji: "📘"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: []
 published: true
+free: true 
 ---
 
 ![](/images/c10-1.png =250x)
