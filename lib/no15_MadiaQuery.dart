@@ -7,7 +7,7 @@ class No15_MediaQuery extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Separeta(),
+      home: Separeta_03(),
     );
   }
 }
@@ -50,5 +50,68 @@ class Separeta extends StatelessWidget {
             ),
           ]),
     );
+  }
+}
+
+//https://youtu.be/Tdpvv5t67l4?list=PL1WkZqhlAdC8enpcvzv_uAS9FmHTDOCJ8
+
+class Separeta_02 extends StatefulWidget {
+  const Separeta_02({Key? key}) : super(key: key);
+
+  @override
+  State<Separeta_02> createState() => _Separeta_02State();
+}
+
+class _Separeta_02State extends State<Separeta_02> {
+  bool isDesktop(BuildContext context) {
+    return MediaQuery.of(context).size.width >= 600;
+  }
+
+  bool isMobile(BuildContext context) {
+    return MediaQuery.of(context).size.width <= 600;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Row(children: [
+        if (isDesktop(context))
+          Container(
+            color: Colors.blue,
+            width: 200,
+            child: const Center(
+              child: Text('SIDEBAR'),
+            ),
+          ),
+        Expanded(
+            child: Container(
+          color: Colors.red,
+          child: const Center(child: Text('CONTENT')),
+        )),
+      ]),
+    );
+  }
+}
+
+class Separeta_03 extends StatefulWidget {
+  const Separeta_03({Key? key}) : super(key: key);
+
+  @override
+  State<Separeta_03> createState() => _Separeta_03State();
+}
+
+class _Separeta_03State extends State<Separeta_03> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        body: MediaQuery.of(context).orientation == Orientation.portrait
+            ? Container(
+                color: Colors.red,
+                child: const Center(child: Text('縦')),
+              )
+            : Container(
+                color: Colors.green,
+                child: const Center(child: Text('横')),
+              ));
   }
 }

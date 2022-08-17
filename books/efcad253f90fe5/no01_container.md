@@ -8,7 +8,6 @@ free: true
 ---
 
 
-## 見出し2
 
 ![](/images/c01-1.png =250x)
 
